@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hii</title>
+  <!-- Подключаем Tailwind CSS для базовой сетки и адаптивности -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    :root {
+      --bg-page: #FFFFFF;        
+      --bg-surface: #F3F3F3;       
+      --border-subtle: #D9D9D9;   
+      --metro-blue: #1BA1E2;       
+      --metro-blue-dark: #0078D7;  
+      --text-primary: #333333;   
+      --text-muted: #767676;      
+
+    * {
+      box-sizing: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-page);
+      color: var(--text-secondary);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    /* Крупные легкие заголовки в духе Zune / Windows Phone 7 */
+    .metro-h1 {
+      font-weight: 300;
+      color: var(--metro-blue);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .metro-h2 {
+      font-weight: 300;
+      color: var(--metro-blue);
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    /* Рамка аватарки в стиле Windows 7 User Tile (строгая, без Aero-стекла) */
+    .win7-avatar-frame {
+      padding: 10px;
+      display: inline-block;
+      border: 0px solid #CCCCCC;
+      border-radius: 30px;
+    }
+
+
+    .links-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .metro-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 18px;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      color: #333333;
+      background-color: #EFEFEF;
+      border: 1px solid #CCCCCC;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background-color 0.1s linear, border-color 0.1s linear;
+    }
+
+    .metro-btn:hover {
+      background-color: #E5E5E5;
+      border-color: var(--metro-blue);
+    }
+
+    .metro-btn:active {
+      background-color: var(--metro-blue);
+      color: #FFFFFF;
+      border-color: var(--metro-blue);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-center items-center py-6 px-4 sm:py-12">
+
+  <!-- Главный плоский контейнер страницы -->
+  <main class="w-full max-w-3xl">
+
+    <!-- ВЕРХНЯЯ СЕКЦИЯ: Аватарка слева + Имя и описание справа -->
+    <header class="flex flex-col sm:flex-row items-start gap-6 sm:gap-8 pb-8 border-b border-[#E5E5E5]">
+      
+      <!-- Левая колонка: Аватар (легко заменить src на свою картинку) -->
+      <div class="shrink-0">
+        <div class="win7-avatar-frame">
+          <!-- 
+            Чтобы поставить свою аватарку, просто замени SVG ниже на тег:
+            <img src="avatar.png" alt="Аватар" class="w-28 h-28 sm:w-32 sm:h-32 object-cover block">
+          -->
+          <img src="avatar.jpe" alt="avatar" class="w-28 h-28 sm:w-32 sm:h-32">
+
+          </svg>
+        </div>
+        <!-- Статус под аватаркой -->
+      </div>
+
+      <!-- Правая колонка: Голубой заголовок и серый текст -->
+      <div class="flex-1 min-w-0">
+        <h1 class="metro-h1 text-3xl sm:text-5xl mb-2">
+          привет!!1 я ураниум
+        </h1>
+        <p class="text-base sm:text-lg text-[#666666] font-light mb-4">
+          
+        </p>
+        <p class="text-sm sm:text-base text-[#555555] leading-relaxed">
+          я - обычный парень из россии, который обожает технологии и то что с ними связано, почти что течтокер. люблю вайбкодить и выкладывать <s>чужие</s> прошивки на 4пда
+        </p>
+      </div>
+	</header>
+	  
+    </br>
+		  
+      <nav class="links-container" aria-label="Ссылки на профили и контакты">
+          <a href="http://madebydimas.top/" target="_blank"><img src="http://madebydimas.top/button.gif" alt="madebydimas" border="0" width="88" height="31"></a> 
+		  <a href="http://myslivets.com" title="Daniel Myslivets" target="_blank" rel="noopener noreferrer"><img src="http://madebydimas.top/buttons/myslivets.png" alt="Daniel Myslivets" border="0" width="88" height="31"></a>
+		  <a href="http://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"><img src="http://madebydimas.top/buttons/vscbutton.gif" width="88" height="31" alt="Visual Studio Code"></a>
+      </nav>
+
+
+  </main>
+
+
+
+</body>
+</html>
